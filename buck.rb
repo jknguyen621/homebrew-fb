@@ -17,7 +17,7 @@ class Buck < Formula
   end
 
   depends_on "ant@1.9"
-  depends_on "openjdk@8"
+  depends_on  java: "1.8" #"openjdk@8"
 
   def install
     # First, bootstrap the build by building Buck with Apache Ant.
